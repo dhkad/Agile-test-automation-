@@ -19,6 +19,13 @@ public class Calculater_unitTest {
 	public void test_add() {
 		assertEquals(2,CM.add(1, 1));
 	}
+	
+	//Pv- test case
+	@Test
+	public void test_add_negCase() {
+		assertEquals(0,CM.add(1, 1));
+	}
+	
 	@Test
 	public void test_subtract() {
 		assertEquals(0,CM.substract(1,1));
